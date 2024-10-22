@@ -10,6 +10,7 @@ mov [BOOT_DRIVE], dl
 mov bp, 0x9000
 mov sp,bp
 
+%include "DISK.asm"
 call lKernel
 
 [bits 16]
